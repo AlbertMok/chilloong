@@ -6,6 +6,8 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // Toggle dark-mode based on .dark class or data-mode="dark"
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
     extend: {
       backgroundImage: {

@@ -1,3 +1,4 @@
+import NavbarComponent from "@/components/Navbar";
 import { cn } from "@/lib/utils";
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
 
@@ -12,7 +13,7 @@ export const Header = forwardRef<
       className={cn("flex items-center justify-between my-6", className)}
     >
       <div>Avatar</div>
-      <nav>Navigation</nav>
+      <NavbarComponent />
       <div>ThemeSwitchButton</div>
     </header>
   );
