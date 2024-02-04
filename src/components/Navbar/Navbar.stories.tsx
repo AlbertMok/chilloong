@@ -11,7 +11,7 @@ const meta = {
 export default meta;
 
 export const NavbarStory: StoryObj<{ value: string }> = {
-  args: { value: "home" },
+  args: { value: "/home" },
   render: ({ value }) => {
     return (
       <Navbar currentPath={value}>
@@ -27,7 +27,7 @@ export const NavbarStory: StoryObj<{ value: string }> = {
       control: {
         type: "radio",
       },
-      options: ["home", "posts", "projects", "collections"],
+      options: ["/home", "/posts", "/projects", "/collections"],
     },
   },
 };
