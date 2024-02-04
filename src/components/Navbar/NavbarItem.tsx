@@ -6,7 +6,6 @@ import { atom, useAtom, useAtomValue } from "jotai";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { motion } from "framer-motion";
-2;
 
 interface NavbarItemProps {
   pathName: string;
@@ -22,18 +21,15 @@ export const NavbarItem = ({ pathName, children }: NavbarItemProps) => {
 
   const isSelected = useAtomValue(isSelectedAtom);
 
-  useEffect(() => {
-    console.log(isSelected);
-  });
   return (
     <li className={cn("px-2 relative py-1 z-10", isSelected && "z-0")}>
       <Link href={pathName} className="relative z-10">
         {children}
       </Link>
-      {true && (
+      {isSelected && (
         <motion.div
-          layoutId="underline"
-          className="absolute bg-neutral-500 z-1"
+          layoutId="thumb"
+          className="absolute bg-neutral-300 z-1 inset-0 rounded-md"
         />
       )}
     </li>
