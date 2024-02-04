@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/style/globals.css";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { Provider } from "jotai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="container mx-auto px-4 flex min-h-screen flex-col bg-neutral-100 ">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <Provider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

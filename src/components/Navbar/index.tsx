@@ -1,10 +1,12 @@
 "use client";
-
+import { Navbar } from "./Navbar";
 import { usePathname } from "next/navigation";
-import { Navbar, NavbarItem } from "./Navbar";
+import { NavbarItem } from "./NavbarItem";
+import { useEffect } from "react";
 
 export default function NavbarComponent() {
   const currentPath = usePathname();
+
   return (
     <Navbar currentPath={currentPath}>
       <NavbarItem pathName="/home">Home</NavbarItem>
