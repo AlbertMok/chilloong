@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/style/globals.css";
+import { Noto_Sans_SC } from "next/font/google";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Provider } from "jotai";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansSC = Noto_Sans_SC({
+  variable: "--font-noto-sans-sc",
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  preload: false,
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${notoSansSC.variable} scroll-smooth`}>
       <body className="container mx-auto px-4 flex min-h-screen flex-col bg-neutral-100 ">
         <Provider>
           <Header />

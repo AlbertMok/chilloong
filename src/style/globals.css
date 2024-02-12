@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+/* LXGW WenKai */
+@font-face {
+  font-family: 'LXGW WenKai Lite';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+      local('LXGW WenKai Light'),
+      url('../../public/fonts/LXGWWenKaiLite-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LXGW WenKai Lite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+      local('LXGW WenKai'),
+      url('../../public/fonts/LXGWWenKaiLite-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LXGW WenKai Lite';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+      local('LXGW WenKai Bold'),
+      url('../../public/fonts/LXGWWenKaiLite-Bold.ttf') format('truetype');
+}

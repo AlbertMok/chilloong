@@ -5,7 +5,7 @@ export const Footer = ({ className }: { className?: string }) => {
   return (
     <footer
       className={cn(
-        "flex items-center justify-between space-y-2 text-slate-600 "
+        "flex items-center justify-center space-y-2 text-slate-600 "
       )}
     >
       <p>

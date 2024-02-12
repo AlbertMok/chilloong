@@ -9,6 +9,10 @@ const config: Config = {
   // Toggle dark-mode based on .dark class or data-mode="dark"
   darkMode: ["class", '[data-mode="dark"]'],
   theme: {
+    fontFamily: {
+      sans: ["var(--font-noto-sans-sc)"],
+      serif: ["LXGW WenKai Lite", "serif"],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
