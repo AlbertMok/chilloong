@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${notoSansSC.variable} scroll-smooth`}>
-      <body className="container mx-auto px-4 flex min-h-screen flex-col bg-neutral-100 ">
+      <body className="container mx-auto px-4 flex min-h-screen flex-col bg-neutral-100 dark:bg-black ">
         <Provider>
           <Header />
           <main className="flex-1">{children}</main>
