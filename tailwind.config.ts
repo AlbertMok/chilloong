@@ -7,7 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   // Toggle dark-mode based on .dark class or data-mode="dark"
-  darkMode: ["class", '[data-mode="dark"]'],
+  darkMode: ["class"],
   theme: {
     fontFamily: {
       sans: ["var(--font-noto-sans-sc)"],
@@ -21,6 +21,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
