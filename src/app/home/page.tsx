@@ -1,5 +1,5 @@
+import { FeatureSection } from "./FeatureSection";
 import { IntroSection } from "./IntroSection";
-import PostSection from "./PostSection";
 
 export function generateMetadata() {
   return {
@@ -9,9 +9,9 @@ export function generateMetadata() {
 
 export default function Home() {
   return (
-    <div className="flex-col">
+    <div className="flex-col p-10">
       <IntroSection />
-      <PostSection />
+      <FeatureSection className="mt-12" />
     </div>
   );
 }
