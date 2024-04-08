@@ -11,12 +11,18 @@ dependencies:
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
+  dayjs:
+    specifier: ^1.11.10
+    version: 1.11.10
   framer-motion:
     specifier: ^11.0.3
     version: 11.0.3(react-dom@18.2.0)(react@18.2.0)
   jotai:
     specifier: ^2.6.4
     version: 2.6.4(@types/react@18.2.48)(react@18.2.0)
+  lucide-react:
+    specifier: ^0.365.0
+    version: 0.365.0(react@18.2.0)
   next:
     specifier: 14.1.0
     version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -5534,6 +5540,10 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: true
 
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: false
+
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
     peerDependencies:
@@ -8000,6 +8010,14 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /lucide-react@0.365.0(react@18.2.0):
+    resolution: {integrity: sha512-sJYpPyyzGHI4B3pys+XSFnE4qtSWc68rFnDLxbNNKjkLST5XSx9DNn5+1Z3eFgFiw39PphNRiVBSVb+AL3oKwA==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
