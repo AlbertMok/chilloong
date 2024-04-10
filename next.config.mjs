@@ -9,6 +9,7 @@ const nextConfig = {
       },
     ];
   },
+  assetPrefix: "/mywebsite/",
 };
 
 export default nextConfig;
