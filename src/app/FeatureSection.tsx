@@ -1,5 +1,5 @@
 import { PostCard } from "@/components/PostCard";
-import { formatDay } from "@/lib/utils";
+import { cn, formatDay } from "@/lib/utils";
 export const FeatureSection = ({ className }: { className?: string }) => {
   // 暂时用所有文章作为代替
   const featuredPost = [
@@ -21,7 +21,7 @@ export const FeatureSection = ({ className }: { className?: string }) => {
   });
 
   return (
-    <section className={className}>
+    <section className={cn("dark:text-neutral-200", className)}>
       <h2 className="font-serif text-4xl font-bold text-primary-11">
         精选文章
       </h2>

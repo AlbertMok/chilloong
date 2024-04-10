@@ -5,6 +5,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Provider } from "jotai";
 import { cn } from "@/lib/utils";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const notoSansSC = Noto_Sans_SC({
   variable: "--font-noto-sans-sc",
@@ -28,8 +29,8 @@ export default function RootLayout({
     <html lang="en" className={`${notoSansSC.variable} scroll-smooth`}>
       <body>
         <Provider>
-          <div className="dark">
-            <div
+          <ThemeProvider>
+            <section
               className={cn(
                 "flex min-h-screen flex-col max-sm:justify-center max-sm:items-center px-20  bg-neutral-100 dark:bg-neutral-800 "
               )}
@@ -37,8 +38,8 @@ export default function RootLayout({
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
-            </div>
-          </div>
+            </section>
+          </ThemeProvider>
         </Provider>
       </body>
     </html>

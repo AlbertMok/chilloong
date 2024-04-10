@@ -1,5 +1,8 @@
+"use client";
 import NavbarComponent from "@/components/Navbar";
+import ThemeSwitcher from "@/components/ThemeSwitch";
 import { cn } from "@/lib/utils";
+
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
 
 export const Header = forwardRef<
@@ -14,7 +17,7 @@ export const Header = forwardRef<
     >
       <div>Avatar</div>
       <NavbarComponent />
-      <div>ThemeSwitchButton</div>
+      <ThemeSwitcher />
     </header>
   );
 });
