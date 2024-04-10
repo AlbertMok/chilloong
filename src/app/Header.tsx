@@ -1,4 +1,5 @@
 "use client";
+import Avatar from "@/components/Avatar";
 import NavbarComponent from "@/components/Navbar";
 import ThemeSwitcher from "@/components/ThemeSwitch";
 import { cn } from "@/lib/utils";
@@ -13,9 +14,12 @@ export const Header = forwardRef<
     <header
       ref={ref}
       {...props}
-      className={cn("flex items-center justify-between my-6", className)}
+      className={cn(
+        "flex items-center justify-between my-6 dark:text-neutral-200",
+        className
+      )}
     >
-      <div>Avatar</div>
+      <Avatar />
       <NavbarComponent />
       <ThemeSwitcher />
     </header>

@@ -29,7 +29,7 @@ export const NavbarItem = ({ pathName, children }: NavbarItemProps) => {
       {isSelected && (
         <motion.div
           layoutId="thumb"
-          className="absolute bg-neutral-300 z-1 inset-0 rounded-md"
+          className="absolute bg-neutral-300 dark:bg-neutral-700 z-1 inset-0 rounded-md"
         />
       )}
     </li>

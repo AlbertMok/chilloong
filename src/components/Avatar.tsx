@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Avatar() {
-  return;
+  return <Link href={"/"}>tienfo.com</Link>;
 }

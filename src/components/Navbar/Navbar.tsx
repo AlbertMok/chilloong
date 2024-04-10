@@ -16,7 +16,7 @@ export const Navbar = ({ currentPath, children }: NavbarProps) => {
 
   return (
     <Provider store={navbarStore}>
-      <nav className="rounded-md w-fit bg-neutral-200 h-fit p-1 shadow-sm">
+      <nav className="rounded-md w-fit bg-neutral-200 h-fit p-1 shadow-sm dark:bg-neutral-600">
         <ul className="flex items-center justify-center space-x-3">
           {children}
         </ul>
