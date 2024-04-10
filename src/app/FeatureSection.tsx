@@ -2,12 +2,7 @@ import { PostCard } from "@/components/PostCard";
 import { cn, formatDay } from "@/lib/utils";
 export const FeatureSection = ({ className }: { className?: string }) => {
   // 暂时用所有文章作为代替
-  const featuredPost = [
-    "hello-world",
-    "hello-world",
-    "hello-world",
-    "hello-world",
-  ];
+  const featuredPost = ["hello-world"];
   // featuredPost存放的是slug
   const featuredPosts = featuredPost.map((slug) => {
     const post = {
